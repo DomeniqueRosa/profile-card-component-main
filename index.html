@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  80K
-  Followers
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              kumbh: ['"Kumbh Sans"', "sans-serif"],
+            },
+            colors: {
+              "dark-cyan": "hsl(185, 75%, 39%)",
+              "very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
+              "dark-grayish-blue": "hsl(227, 10%, 46%)",
+              "dark-gray": "hsl(0, 0%, 59%)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .bg-custom {
+        background-image: url('./images/bg-pattern-card.svg');
+        background-repeat: no-repeat;
+    background-position: top;
+      }
+    </style>
 
-  803K
-  Likes
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body class="grid place-items-center h-screen bg-dark-cyan">
+    <div
+      class="bg-custom font-kumbh text-dark-gray bg-white flex flex-col place-items-center  border-gray-200 rounded-xl shadow-lg w-[350px] h-[376px]"
+    >
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="">
+        
+        <img
+          class="border-[6px] border-white rounded-full mt-[85%]"
+          src="./images/image-victor.jpg"
+          alt=""
+        />
+      </div>
+      <h1 class="mt-4"><strong class="text-very-dark-desaturated-blue font-semibold text-lg mr-1">Victor Crest</strong> 26</h1>
+      <p>London</p>
+      <div class="px-4 flex justify-between w-full border-t border-gray-200 mt-6 pt-4 text-center">
+        <div class="flex-1">
+          <p class="text-lg text-very-dark-desaturated-blue font-semibold">80K</p>
+          <p class="text-xs tracking-widest ">Followers</p>
+        </div>
+        <div class="flex-1">
+          <p class="text-lg text-very-dark-desaturated-blue font-semibold">803K</p>
+          <p class="text-xs tracking-widest ">Likes</p>
+        </div>
+        <div class="flex-1">
+          <p class="text-lg text-very-dark-desaturated-blue font-semibold">1.4K</p>
+          <p class="text-xs tracking-widest ">Photos</p>
+        </div>
+      </div>
   </div>
-</body>
+</div>
+    <div class="absolute bottom-4 text-xs text-very-grayish-blue">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alires Rosa</a>.
+    </div>
+  </body>
 </html>
