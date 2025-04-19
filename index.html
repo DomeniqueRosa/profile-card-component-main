@@ -41,11 +41,17 @@
         background-repeat: no-repeat;
     background-position: top;
       }
+
+      .bg-body{
+        background-image: url(./images/bg-pattern-top.svg),  url('./images/bg-pattern-bottom.svg') ;     
+        background-repeat: no-repeat, no-repeat;  
+        background-position: right 50vw bottom 40vh, left 45vw top 58vh
+      }
     </style>
 
     <title>Frontend Mentor | Profile card component</title>
   </head>
-  <body class="grid place-items-center h-screen bg-dark-cyan">
+  <body class="grid place-items-center h-screen bg-dark-cyan bg-body">
     <div
       class="bg-custom font-kumbh text-dark-gray bg-white flex flex-col place-items-center  border-gray-200 rounded-xl shadow-lg w-[350px] h-[376px]"
     >
