@@ -9,7 +9,7 @@
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/DomeniqueRosa/profile-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://profile-card-component-main-oz2aaj7i6-domeniquerosas-projects.vercel.app/)
 
 ## My process
 
